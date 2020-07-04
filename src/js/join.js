@@ -2,11 +2,9 @@ var db = firebase.firestore();
 
 countMembers()
 
-var memberCount = 10
- 
 function countMembers() { // display members
     db.collection("members").doc("count").onSnapshot(function (doc) {
-        document.getElementById("member-count").innerHTML = 'Current Members: '+ memberCount;
+        document.getElementById("member-count").innerHTML = 'Current Members: '+ doc.data().memberCount;
     });
 }
 
