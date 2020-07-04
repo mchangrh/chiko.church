@@ -5,8 +5,15 @@ module.exports = function (grunt) {
     // copy favicon
     copy: {
       dist: {
-       src: 'src/favicon.png',
-       dest: 'dist/favicon.png'
+        files: [{
+            src: 'src/favicon.png',
+            dest: 'dist/favicon.png'
+          },
+          {
+            src: "src/static/**",
+            dest: "dist/static/"
+          }
+        ]
       }
     },
     // uglifyJS
@@ -14,7 +21,6 @@ module.exports = function (grunt) {
       dist: {
         files: {
           'dist/js/join.min.js': ['src/js/join.js'],
-          'dist/js/ytplayer.min.js': ['src/js/ytplayer.js']
         }
       }
     },
@@ -41,4 +47,3 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['clean', 'copy', 'uglify', 'htmlmin'])
 }
-
