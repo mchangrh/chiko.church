@@ -10,7 +10,9 @@ module.exports = function (grunt) {
             dest: 'dist/favicon.png'
           },
           {
-            src: "src/static/**",
+            expand: true,
+            cwd: 'src/static/',
+            src: "**",
             dest: "dist/static/"
           }
         ]
