@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>⛪ Join the Church of Chiko ⛪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css">
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">⛪</a>
+    </div>
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="join">
+          Join the Church of Chiko
+        </a>
+        <a class="navbar-item" href="doctrine">
+          Doctrine of the Church of Chiko
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="hero is-link is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title" id="join-message">
+          Join the Church of Chiko
+        </h1>
+        <h2 class="subtitle" id="member-count">
+          Current Members:
+        </h2>
+        <h2>
+          <button class="button is-info" onclick="join()">Join</button>
+        </h2>
+      </div>
+
+    </div>
+  </section>
+  <script src="/__/firebase/7.15.5/firebase-app.js"></script>
+  <script src="/__/firebase/7.15.5/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="/js/join.js"></script>
+</body>

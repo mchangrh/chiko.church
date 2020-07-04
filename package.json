@@ -4,7 +4,8 @@
   "description": "chiko.church website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dist": "grunt"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,10 @@
   "homepage": "https://github.com/mchangrh/chiko.church#readme",
   "dependencies": {
     "firebase-admin": "^8.13.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.2.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1"
   }
 }
