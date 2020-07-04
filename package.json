@@ -1,0 +1,25 @@
+{
+  "name": "chiko.church",
+  "version": "0.0.1",
+  "description": "chiko.church website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchangrh/chiko.church.git"
+  },
+  "keywords": [
+    "chiko.church"
+  ],
+  "author": "Michael Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mchangrh/chiko.church/issues"
+  },
+  "homepage": "https://github.com/mchangrh/chiko.church#readme",
+  "dependencies": {
+    "firebase-admin": "^8.13.0"
+  }
+}
