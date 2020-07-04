@@ -18,6 +18,21 @@ module.exports = function (grunt) {
         ]
       }
     },
+    // css min
+    cssmin: {
+      options: {
+        mergeIntoShorthands: true,
+      },
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'src/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'dist/css',
+          ext: '.min.css'
+        }]
+      }
+    },
     // uglifyJS
     uglify: {
       dist: {
@@ -46,6 +61,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('default', ['clean', 'copy', 'uglify', 'htmlmin'])
+
+  grunt.registerTask('default', ['clean', 'copy', 'cssmin', 'uglify', 'htmlmin'])
 }

@@ -1,0 +1,222 @@
+/*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+body,
+h1,
+h2
+html {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit
+}
+
+video {
+    height: auto;
+    max-width: 100%
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%
+}
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+a {
+    color: #3273dc;
+    cursor: pointer;
+    text-decoration: none
+}
+
+a:hover {
+    color: #363636
+}
+
+.container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+@media screen and (max-width:1023px) {
+    .navbar-brand .navbar-item {
+        align-items: center;
+        display: flex
+    }
+
+    .navbar-menu {
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, .1);
+        padding: .5rem 0
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .navbar,
+    .navbar-menu,
+    .navbar-start {
+        align-items: stretch;
+        display: flex
+    }
+
+    .navbar {
+        min-height: 3.25rem
+    }
+
+    .navbar-item {
+        align-items: center;
+        display: flex
+    }
+
+    .navbar-menu {
+        flex-grow: 1;
+        flex-shrink: 0
+    }
+
+    .navbar-start {
+        justify-content: flex-start;
+        margin-right: auto
+    }
+
+    .container {
+        max-width: 960px
+    }
+}
+
+@media screen and (min-width:1216px) {
+    .container {
+        max-width: 1152px
+    }
+}
+
+@media screen and (min-width:1408px) {
+    .container {
+        max-width: 1344px
+    }
+}
+
+.title {
+    word-break: break-word;
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125
+}
+
+.subtitle {
+    color: #4a4a4a;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25
+}
+
+.navbar {
+    background-color: #fff;
+    min-height: 3.25rem;
+    position: relative;
+    z-index: 30
+}
+
+.navbar-brand {
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+    min-height: 3.25rem
+}
+
+.navbar-brand a.navbar-item:focus,
+.navbar-brand a.navbar-item:hover {
+    background-color: transparent
+}
+
+.navbar-menu {
+    display: none
+}
+
+.navbar-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: #4a4a4a;
+    display: block;
+    line-height: 1.5;
+    padding: .5rem .75rem;
+    position: relative
+}
+
+a.navbar-item {
+    cursor: pointer
+}
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+    background-color: #fafafa;
+    color: #3273dc
+}
+
+.hero.is-fullheight-with-navbar {
+    min-height: calc(100vh - 3.25rem)
+}
+
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.hero.is-link {
+    background-color: #3273dc;
+    color: #fff
+}
+
+.hero.is-link .title {
+    color: #fff
+}
+
+.hero.is-link .subtitle {
+    color: rgba(255, 255, 255, .9)
+}
+
+.hero-body {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem
+}
+
+.section {
+    padding: 3rem 1.5rem;
+    display: block
+}
