@@ -4,6 +4,7 @@
 <head>
   <title>⛪ Church of Chiko ⛪</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Welcome to the Church of Chiko. Nothing matters and existence is futile. Only Chiko is forever.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/bulma.min.css">
 </head>
@@ -12,8 +13,13 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">⛪</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-    <div id="navbar" class="navbar-menu">
+    <div id="navbar" class="navbar-menu" id="navbar">
       <div class="navbar-start">
         <a class="navbar-item" href="join">
           Join the Church of Chiko
@@ -24,7 +30,7 @@
       </div>
     </div>
   </nav>
-  <section class="hero">
+  <section class="hero is-link is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -40,6 +46,16 @@
       </div>
     </div>
   </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      var burger = document.querySelector('.navbar-burger');
+      var menu = document.querySelector('#' + burger.dataset.target);
+      burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    })
+  </script>
 </body>
 
 </html>
